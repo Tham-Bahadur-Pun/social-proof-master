@@ -109,8 +109,11 @@ span {
 
 @media (min-width: 720px) {
   body {
-    min-height: 100vh;
+    height: 100vh;
     margin: 0 auto;
+    /* display: flex;
+    justify-content: center;
+    align-items: center; */
     background-image: url("./images/bg-pattern-top-desktop.svg"),
       url("./images/bg-pattern-bottom-desktop.svg");
     background-position: top, bottom;
@@ -121,5 +124,62 @@ span {
     justify-content: center;
     align-items: center;
     flex-direction: column;
+    width: 70%;
+    margin: 5% auto;
+  }
+  .rating_intro {
+    display: flex;
+    justify-content: space-between;
+  }
+  .intro {
+    width: 45%;
+    text-align: left;
+  }
+  .intro h1 {
+    font-size: 4rem;
+    line-height: 50px;
+    font-weight: 700;
+  }
+  .rating {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: column;
+    width: 50%;
+  }
+  .rating > div {
+    flex-direction: row;
+    padding: 0;
+    width: initial;
+    padding: 0 2rem 0 1rem;
+  }
+  .rating > div > p {
+    margin-left: 1rem;
+  }
+  .rate2 {
+    padding: 0.5rem 0;
+    margin-left: 2rem;
+  }
+  .rate3 {
+    margin-left: 4rem;
+  }
+  .reviews {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .review2 {
+    margin-top: 2rem;
+    margin-left: 1rem;
+    margin-right: 1rem;
+  }
+  .review3 {
+    margin-top: 5rem;
+  }
+}
+
+@media (min-width: 720px) and (max-width: 920px) {
+  main {
+    width: 90%;
   }
 }
